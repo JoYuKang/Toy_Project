@@ -38,10 +38,23 @@
             padding: 30px;
             width: 500px;
             margin: 0px auto 30px auto;
+            display: none;
 
         }
     </style>
     <script>
+        function openclose(){
+            let status = $('#post-box').css('display');
+            if(status =='block'){
+                $('#post-box').hide();
+                $('#btn-posting-box').text('포스팅박스 열기');
+            }else{
+                $('#post-box').show();
+                $('#btn-posting-box').text('포스팅박스 닫기');
+            }
+
+        }
+
         let count =1;
         function hey(){
 
@@ -64,7 +77,7 @@
         <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다.</p>
         <hr class="my-4">
         <p class="lead">
-            <a onclick="hey()" id="btn-posting-box" class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
+            <a onclick="openclose()" id="btn-posting-box" class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
         </p>
     </div>
     <div class = "posting_box" id = "post-box">

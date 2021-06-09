@@ -22,9 +22,10 @@
 
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
     <style>
-        *{
+        * {
             font-family: 'Jua', sans-serif;
         }
+
         .img {
             width: 900px;
             height: 600px;
@@ -52,11 +53,36 @@
             display: block;
 
         }
+        .text-blue{
+            color: blue;
+        }
     </style>
     <script>
-        function alarm(){
+        function alarm() {
             alert("주문이 완료되었습니다!")
         }
+
+        $(document).ready(function () {
+            q1();
+        });
+
+        function q1() {
+            // 여기에 코드를 입력하세요
+
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/rate",
+                data: {},
+                success: function (response) {
+                    let rate = response['rate']
+                        console.log(rate);
+                    $('#rate').text(rate)
+
+                }
+
+            })
+        }
+
     </script>
 </head>
 
@@ -68,6 +94,8 @@
     <div class="input">
         <h1>맛있는 모밀 팝니다!<span class="span">가격 :7000원/개</span></h1>
         <p>이 모밀 아주 맛있습니다.</p>
+        <div class="text-blue">
+        <p>달러-원 환율 :<span id = "rate"></span> </p></div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text">주문자 성함</span>
