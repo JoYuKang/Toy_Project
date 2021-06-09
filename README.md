@@ -11,3 +11,10 @@ https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgol
 https://developer.mozilla.org/ko/docs/Web/CSS/border     
 https://getbootstrap.com/docs/4.0/components/alerts/     
 https://www.w3schools.com/css/css_border.asp     
+
+### mongoDB 다운
+https://www.mongodb.com/try/download/community
+### Git bash 다운
+https://git-scm.com/
+### Robo3T 다운 
+https://robomongo.org/download
