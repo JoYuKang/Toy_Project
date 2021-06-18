@@ -18,3 +18,6 @@ https://www.mongodb.com/try/download/community
 https://git-scm.com/
 ### Robo3T 다운 
 https://robomongo.org/download
+
+### 프레임워크 다운     
+flask
