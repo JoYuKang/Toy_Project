@@ -19,12 +19,13 @@ https://www.mongodb.com/try/download/community
 https://git-scm.com/
 ### Robo3T 다운 
 https://robomongo.org/download
-
+### Pymongo w3school
+https://www.w3schools.com/python/python_mongodb_sort.asp
 ### 프레임워크 다운     
 flask     
 pymongo    
 bs4     
 requests     
-## 북리뷰 사이트 
-## 무비스타
+### 북리뷰 사이트 
+### 무비스타
       
