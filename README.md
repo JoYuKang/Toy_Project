@@ -26,4 +26,5 @@ pymongo
 bs4     
 requests     
 ## 북리뷰 사이트 
-## 개인 
+## 무비스타
+      
