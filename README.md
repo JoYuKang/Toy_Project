@@ -43,3 +43,9 @@ sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 #### 포트포워딩
 80포트로 들어오는 요청을 5000포트로 넘겨주는 명령어     
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 5000
+#### 서버 키고 끄기
+nohup python app.py &      
+ps -ef | grep 'app.py'     
+kill -9 3857
+
+
