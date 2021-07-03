@@ -29,3 +29,5 @@ requests
 ### 북리뷰 사이트 
 ### 무비스타
       
+### 서버 만들기
+https://ap-northeast-2.console.aws.amazon.com/console/home?region=ap-northeast-2#
