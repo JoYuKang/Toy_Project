@@ -31,3 +31,15 @@ requests
       
 ### 서버 만들기
 https://ap-northeast-2.console.aws.amazon.com/console/home?region=ap-northeast-2#
+### 세팅
+sudo chmod 755 initial_ec2.sh     
+#### pip3 설치
+sudo apt-get update
+sudo apt-get install -y python3-pip
+
+#### pip3 대신 pip 라고 입력하기 위한 명령어
+sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+
+#### 포트포워딩
+80포트로 들어오는 요청을 5000포트로 넘겨주는 명령어     
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 5000
