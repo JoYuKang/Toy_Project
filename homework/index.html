@@ -21,6 +21,9 @@
             crossorigin="anonymous"></script>
 
     <title> 연습모드</title>
+    <meta property="og:title" content="모밀 판매 사이트"/>
+    <meta property="og:description" content="맛있는 모밀 사가세요~"/>
+    <meta property="og:image" content="{{ url_for('static', filename='ogimage.jpg') }}"/>
     <style>
         * {
             font-family: 'Jua', sans-serif;
@@ -73,7 +76,7 @@
             order_listing();
         });
 
-         function listing() {
+        function listing() {
             $.ajax({
                 type: "GET",
                 url: "/order",
