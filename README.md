@@ -48,4 +48,4 @@ nohup python app.py &
 ps -ef | grep 'app.py'     
 kill -9 3857
 
-
+    
